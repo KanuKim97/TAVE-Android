@@ -94,17 +94,13 @@ fun HorizontalImagePager(
     imageList: List<String?>?
 ) {
     val imageCount = if (imageList?.isNotEmpty() == true) { imageList.size } else { 0 }
-    val pagerState = rememberPagerState(initialPage = imageCount)
+    val pagerState = rememberPagerState(pageCount = { imageCount })
 
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        HorizontalPager(
-            pageCount = imageCount,
-            state = pagerState,
-            //key = { imageList?.get(it) ?: 0 }
-        ) {
+        HorizontalPager(state = pagerState) {
             GlideImage(
                 imageModel = { "${imageList?.get(it)}" } ,
                 modifier = Modifier
