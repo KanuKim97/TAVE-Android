@@ -1,10 +1,10 @@
 package com.example.domain.entity.notice
 
-import com.example.domain.util.Constants.NOTICE_TYPE_GENERAL
-import com.example.domain.util.Constants.NOTICE_TYPE_NEWS
-import com.example.domain.util.Constants.NOTICE_TYPE_REVIEW
-import com.example.domain.util.Constants.NOTICE_TYPE_SCHEDULE
-import com.example.domain.util.Constants.NOTICE_TYPE_TECH
+import com.example.domain.constants.Constants.NOTICE_TYPE_GENERAL
+import com.example.domain.constants.Constants.NOTICE_TYPE_NEWS
+import com.example.domain.constants.Constants.NOTICE_TYPE_REVIEW
+import com.example.domain.constants.Constants.NOTICE_TYPE_SCHEDULE
+import com.example.domain.constants.Constants.NOTICE_TYPE_TECH
 
 val noticeTypeMap = mapOf(
     NoticeTypeEnumClass.SCHEDULE.name to NOTICE_TYPE_SCHEDULE,

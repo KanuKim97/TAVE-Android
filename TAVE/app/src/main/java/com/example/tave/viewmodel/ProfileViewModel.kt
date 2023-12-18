@@ -8,7 +8,7 @@ import com.example.domain.entity.profile.UserProfileEntity
 import com.example.domain.usecases.profile.GetUserProfileUseCase
 import com.example.tave.TaveApplication
 import com.example.tave.common.Constants
-import com.example.tave.di.qualifier.IoDispatcher
+import com.example.tave.di.IoDispatcher
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job

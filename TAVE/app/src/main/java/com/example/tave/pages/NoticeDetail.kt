@@ -14,11 +14,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.domain.entity.notice.NoticeDetailEntity
 import com.example.tave.common.Constants
-import com.example.tave.items.glide.ShimmerEffectItem
-import com.example.tave.items.noticeDetail.NoticeDetailCard
-import com.example.tave.items.noticeDetail.NoticeDetailLazyGridsPics
-import com.example.tave.items.noticeDetail.NoticeDetailPublisherBar
-import com.example.tave.items.noticeDetail.NoticeDetailTopBar
+import com.example.tave.components.glide.ShimmerEffectItem
+import com.example.tave.components.noticeDetail.NoticeDetailCard
+import com.example.tave.components.noticeDetail.NoticeDetailLazyGridsPics
+import com.example.tave.components.noticeDetail.NoticeDetailPublisherBar
+import com.example.tave.components.noticeDetail.NoticeDetailTopBar
 import com.example.tave.ui.font.NotoSansKr
 import kotlinx.coroutines.delay
 

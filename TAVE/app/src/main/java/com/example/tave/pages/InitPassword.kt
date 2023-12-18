@@ -14,13 +14,13 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.tave.common.util.state.InitPasswordState.*
-import com.example.tave.items.initpassword.InitPasswordBtn
-import com.example.tave.items.initpassword.InitPasswordLogo
+import com.example.tave.util.state.InitPasswordState.*
+import com.example.tave.components.initpassword.InitPasswordBtn
+import com.example.tave.components.initpassword.InitPasswordLogo
 import com.example.tave.ui.theme.Shape
 import com.example.tave.HomePage
 import com.example.tave.R
-import com.example.tave.common.util.state.InitPasswordState
+import com.example.tave.util.state.InitPasswordState
 
 @Composable
 fun InitPasswordPage(

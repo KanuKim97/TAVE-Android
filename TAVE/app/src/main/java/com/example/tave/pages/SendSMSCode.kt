@@ -30,9 +30,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.tave.R
-import com.example.tave.common.util.state.SendSMSCodeState
-import com.example.tave.items.sms.SMSLogo
-import com.example.tave.items.sms.SMSPhoneNumberBtn
+import com.example.tave.util.state.SendSMSCodeState
+import com.example.tave.components.sms.SMSLogo
+import com.example.tave.components.sms.SMSPhoneNumberBtn
 import com.example.tave.ui.theme.Shape
 
 @Composable

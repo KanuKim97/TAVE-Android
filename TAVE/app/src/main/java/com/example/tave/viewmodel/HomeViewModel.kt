@@ -7,37 +7,31 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.data.api.TaveAPIService
+import com.example.data.remote.TaveAPIService
 import com.example.domain.entity.profile.UserProfileEntity
 import com.example.domain.usecases.profile.GetUserProfileUseCase
-import com.example.domain.usecases.schedule.GetRecentScheduleUseCase
 import com.example.domain.usecases.score.GetPersonalScoreUseCase
 import com.example.domain.usecases.score.GetTeamScoreUseCase
-import com.example.tave.BuildConfig
 import com.example.tave.TaveApplication
 import com.example.tave.common.Constants
-import com.example.tave.di.qualifier.DefaultDispatcher
-import com.example.tave.di.qualifier.IoDispatcher
+import com.example.tave.di.DefaultDispatcher
+import com.example.tave.di.IoDispatcher
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import okhttp3.Request
-import okhttp3.sse.EventSource
-import okhttp3.sse.EventSourceListener
 import java.util.Date
 import java.util.Locale
 import javax.inject.Inject
+
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val taveAPIService: TaveAPIService,
     private val getUserProfileUseCase: GetUserProfileUseCase,
     private val getPersonalScoreUseCase: GetPersonalScoreUseCase,
     private val getTeamScoreUseCase: GetTeamScoreUseCase,
-    private val sseEventListener: EventSource.Factory,
-    private val sseEventSourceListener: EventSourceListener,
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
     @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher
 ): ViewModel() {
@@ -66,17 +60,17 @@ class HomeViewModel @Inject constructor(
     init {
         getUserProfile()
         getScheduleAll()
-        sseEventSource().request()
+        //sseEventSource().request()
     }
 
-    private fun setSSERequestInstance(): Request = Request.Builder()
-        .url(BuildConfig.TAVE_SSE_URL)
-        .addHeader(Constants.AUTHORIZATION_HEADER_TITLE, accessToken)
-        .addHeader(Constants.SSE_HEADER_TITLE, Constants.SSE_HEADER_VALUE)
-        .build()
-
-    private fun sseEventSource(): EventSource =
-        sseEventListener.newEventSource(setSSERequestInstance(), sseEventSourceListener)
+//    private fun setSSERequestInstance(): Request = Request.Builder()
+//        .url(BuildConfig.TAVE_SSE_URL)
+//        .addHeader(Constants.AUTHORIZATION_HEADER_TITLE, accessToken)
+//        .addHeader(Constants.SSE_HEADER_TITLE, Constants.SSE_HEADER_VALUE)
+//        .build()
+//
+//    private fun sseEventSource(): EventSource =
+//        sseEventListener.newEventSource(setSSERequestInstance(), sseEventSourceListener)
 
 
     private fun getUserProfile(): Job = viewModelScope.launch(ioDispatcher) {

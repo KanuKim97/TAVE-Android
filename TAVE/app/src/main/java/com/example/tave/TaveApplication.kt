@@ -1,7 +1,7 @@
 package com.example.tave
 
 import android.app.Application
-import com.example.tave.common.util.PreferenceUtil
+import com.example.tave.util.PreferenceUtil
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp

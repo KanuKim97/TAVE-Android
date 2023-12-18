@@ -3,17 +3,13 @@ package com.example.tave.common
 object Constants {
     const val TAVE_ADMIN: String = "TAVE 운영진"
 
-    //URL REQUEST HEADER
-    const val AUTHORIZATION_HEADER_TITLE: String = "authorization"
-    const val SSE_HEADER_TITLE: String = "accept"
-    const val SSE_HEADER_VALUE: String = "text/event-stream"
+//    //URL REQUEST HEADER
+//    const val AUTHORIZATION_HEADER_TITLE: String = "authorization"
+//    const val SSE_HEADER_TITLE: String = "accept"
+//    const val SSE_HEADER_VALUE: String = "text/event-stream"
 
     //MODULE TEXT
     const val ACCESS_TOKEN_TITLE: String = "accessToken"
-    const val ACCESS_CERT_ALIAS: String = "TaveCA"
-    const val ACCESS_CERT_TYPE: String = "X.509"
-    const val SSL_PROTOCOL: String = "TLS"
-    const val SSE_ACK_FLAG: String = "connected!"
 
     //GLIDE IMAGE CONTENT DESCRIPTION
     const val IMAGE_LOAD_SUCCESS_CONTENT_DESC: String = "이미지 로드 성공"

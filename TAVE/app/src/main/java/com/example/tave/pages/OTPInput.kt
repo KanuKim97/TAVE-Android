@@ -32,10 +32,10 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.tave.InitPasswordPage
 import com.example.tave.R
-import com.example.tave.common.util.state.CheckOTPCodeState
-import com.example.tave.common.util.state.CheckOTPCodeState.*
-import com.example.tave.items.otp.OTPCodeInput
-import com.example.tave.items.otp.OtpLogo
+import com.example.tave.util.state.CheckOTPCodeState
+import com.example.tave.util.state.CheckOTPCodeState.*
+import com.example.tave.components.otp.OTPCodeInput
+import com.example.tave.components.otp.OtpLogo
 import com.example.tave.ui.theme.Shape
 
 @Composable

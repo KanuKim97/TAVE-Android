@@ -15,8 +15,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.domain.entity.notice.NoticeDetailEntity
 import com.example.tave.R
-import com.example.tave.items.notice.MainNoticeCard
-import com.example.tave.items.notice.NoticeSubItemsColumns
+import com.example.tave.components.notice.MainNoticeCard
+import com.example.tave.components.notice.NoticeSubItemsColumns
 import com.example.tave.ui.font.NotoSansKr
 
 @Composable

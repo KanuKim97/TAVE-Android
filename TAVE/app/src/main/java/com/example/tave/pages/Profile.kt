@@ -7,7 +7,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.domain.entity.profile.UserProfileEntity
-import com.example.tave.items.profile.*
+import com.example.tave.components.profile.*
 
 @Composable
 fun ProfilePage(

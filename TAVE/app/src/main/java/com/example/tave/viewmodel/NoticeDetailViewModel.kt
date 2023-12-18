@@ -11,7 +11,7 @@ import com.example.domain.entity.notice.noticeTypeMap
 import com.example.domain.usecases.notice.GetNoticeDetailUseCase
 import com.example.tave.TaveApplication
 import com.example.tave.common.Constants
-import com.example.tave.di.qualifier.IoDispatcher
+import com.example.tave.di.IoDispatcher
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job

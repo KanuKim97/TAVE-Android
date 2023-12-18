@@ -1,13 +1,13 @@
 package com.example.data.repositoryImpl
 
 import com.example.data.BuildConfig
-import com.example.data.api.TaveAPIService
+import com.example.data.remote.TaveAPIService
 import com.example.data.model.login.LogInBodyModel
 import com.example.data.model.login.ModifyPasswordModel
 import com.example.data.model.notice.NoticeDetailModel
 import com.example.data.model.profile.UserProfileModel
 import com.example.data.model.schedule.ScheduleModel
-import com.example.data.util.common.Constants
+import com.example.data.constants.Constants
 import com.example.data.util.toLogInModelMapper
 import com.example.data.util.toNoticeDetailEntityListMapper
 import com.example.data.util.toNoticeDetailEntityMapper

@@ -20,13 +20,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.tave.R
-import com.example.tave.common.util.state.LogInUserState.*
-import com.example.tave.items.login.LoginBtn
-import com.example.tave.items.login.LoginIntro
+import com.example.tave.util.state.LogInUserState.*
+import com.example.tave.components.login.LoginBtn
+import com.example.tave.components.login.LoginIntro
 import com.example.tave.ui.theme.Shape
 import com.example.tave.HomePage
 import com.example.tave.SendSMSCodePage
-import com.example.tave.common.util.state.LogInUserState
+import com.example.tave.util.state.LogInUserState
 
 @Composable
 fun LoginPage(

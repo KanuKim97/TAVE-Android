@@ -17,7 +17,7 @@ import com.example.domain.entity.profile.UserProfileEntity
 import com.example.tave.NoticePage
 import com.example.tave.ProfilePage
 import com.example.tave.R
-import com.example.tave.items.home.*
+import com.example.tave.components.home.*
 import com.example.tave.ui.theme.CustomShape
 
 @Composable
@@ -33,7 +33,8 @@ fun HomePage(
     modifier: Modifier = Modifier,
 ) {
     LaunchedEffect(
-        key1 = Unit,
+        key1 = personalScore,
+        key2 = teamScore,
         block = {
             getPersonalScore()
             getTeamScore()

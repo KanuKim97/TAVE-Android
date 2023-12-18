@@ -6,8 +6,8 @@ import com.example.domain.entity.login.ModifyPasswordEntity
 import com.example.domain.usecases.login.ModifyPasswordUseCase
 import com.example.tave.TaveApplication
 import com.example.tave.common.Constants
-import com.example.tave.common.util.state.InitPasswordState
-import com.example.tave.di.qualifier.IoDispatcher
+import com.example.tave.util.state.InitPasswordState
+import com.example.tave.di.IoDispatcher
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job

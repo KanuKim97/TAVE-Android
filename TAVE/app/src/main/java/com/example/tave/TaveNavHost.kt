@@ -29,7 +29,8 @@ import com.example.tave.viewmodel.SendSMSViewModel
 @Composable
 fun TaveNavHost(navController: NavHostController) {
     val startPoint: String = if (
-        TaveApplication.authPrefs
+        TaveApplication
+            .authPrefs
             .getTokenValue(Constants.ACCESS_TOKEN_TITLE, "")
             .isNotEmpty()
         ) {
